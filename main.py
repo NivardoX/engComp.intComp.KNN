@@ -55,4 +55,5 @@ if __name__ == '__main__':
   for test_data_idx in range(iris_attributes_test.shape[0]):
 
     predicted = knn.predict(iris_attributes_test.iloc[[test_data_idx]].to_numpy()[0])
+    print(iris_attributes_test.iloc[[test_data_idx]].to_numpy()[0])
     print(f"Predicted {predicted}, Expected {iris_classes_test[test_data_idx][0]} ")
